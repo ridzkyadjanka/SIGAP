@@ -1,0 +1,8 @@
+# Konfigurasi deploy SIGAP ke Netlify (Next.js otomatis memakai Netlify Next.js Runtime)
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_TELEMETRY_DISABLED = "1"
